@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+
+  <title>Twitch</title>
+  <meta name="description" content="Twich Interface Clone">
+  <meta name="author" content="Gabriel Sichelero">
+  <link href="src/twitch.png" rel="icon" type="image/png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+div.navbar {
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+    color: #9147FF;
+}
+
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  margin: 8px 1px;
+  border: none;
+  font-size: 17px;
+  background-color: #E5E5E5;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 15px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 4px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+#entrar {
+    float: right;
+    color: black;
+    background-color: #F7F7F8;
+    margin: 8px 3px;
+}
+
+#cadastrar {
+    float: right;
+    color: white;
+    background-color: #9147FF;
+    margin: 8px 3px;
+}
+
+#lupa {
+    background-color: #F7F7F8;
+    float: right;
+    width: 1px;
+    margin: 8px 16px 0 0;
+}
+
+div.left-side {
+    width: 25%;
+    float: left;
+}
+
+div.right-side {
+    width: 75%;
+    float: right;
+    background-color: #F7F7F8;
+}
+
+div.footer {
+    background-color: #9147FF;
+    height: 20px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#" class="active">Procurar</a>
+        <a href="#">Esports</a>
+        <a href="#">Música</a>
+        <a href="#">...</a>
+
+        <a href="#" class="right"></a>
+        <a href="#" class="button" id="cadastrar">Cadastrar-se</a>
+        <a href="#" class="button" id="entrar">Entrar</a>
+        <a href="#" class="button" id="lupa"></a>
+        <input type="text" placeholder="Buscar">
+
+    </div>
+
+    <div class="left-side">
+
+    </div>
+
+    <div class="right-side">
+
+    </div>
+
+    <div class="footer">
+      </div>
+
+</body>
+</html>
