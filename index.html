@@ -7,7 +7,7 @@
   <title>Twitch</title>
   <meta name="description" content="Twich Interface Clone">
   <meta name="author" content="Gabriel Sichelero">
-  <link href="src/twitch.png" rel="icon" type="image/png" />
+  <link href="src/avatar_default.png" rel="icon" type="image/png" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
@@ -54,6 +54,14 @@ div.navbar {
   border-radius: 5px;
 }
 
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
 .button {
   padding: 15px 32px;
   margin: 4px 2px;
@@ -84,6 +92,11 @@ div.navbar {
     margin: 8px 16px 0 0;
 }
 
+mark.purple {
+    color: #9147FF;
+    background: none;
+}
+
 div.left-side {
     width: 25%;
     float: left;
@@ -93,6 +106,42 @@ div.right-side {
     width: 75%;
     float: right;
     background-color: #F7F7F8;
+    position: relative;
+}
+
+div.sep {
+    clear: both;
+}
+
+div img {
+  width: 100%;
+  height: 100%;
+}
+
+div.desc {
+  padding: 0px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+div.gallery-top {
+  margin: 0px 0px 10px 0.5%;
+  float: left;
+  width: 32.7%;
+  height: 49.7%;
+}
+
+div.gallery-bottom {
+  margin: 0px 0px 10px 0.5%;
+  float: left;
+  width: 16.1%;
+  height: 200px;
+}
+
+h3 {
+    margin: 10px 0 10px 0.5%;
 }
 
 div.footer {
@@ -100,7 +149,9 @@ div.footer {
     height: 20px;
     width: 100%;
     bottom: 0;
-    position: fixed;
+    left: 0;
+    right: 0;
+    position:fixed;
 }
 
 </style>
@@ -110,6 +161,11 @@ div.footer {
 <body>
 
     <div class="navbar">
+        <a href="#">
+            <div class="logo-image">
+                  <img src="src/avatar_default.png">
+            </div>
+        </a>
         <a href="#" class="active">Procurar</a>
         <a href="#">Esports</a>
         <a href="#">Música</a>
@@ -124,11 +180,113 @@ div.footer {
     </div>
 
     <div class="left-side">
-
+        <h2>
+            Participe da
+            <br>
+            comunidade
+            <br>
+            <mark class="purple">Twitch</mark> !
+        </h2>
+        <p>
+            Descubra as melhores 
+            <br>
+            transmissões ao vivo em 
+            <br>
+            qualquer lugar.
+        </p>
+        <div class="navbar">
+            <a href="#" class="button" id="cadastrar" style="float: left; margin: 0;">Cadastrar-se</a>
+        </div>
+        <h2>
+            Cadastre-se
+            <br>
+            para aproveitar
+            <br>
+            o melhor de
+             <br>
+            <mark class="purple"> BeyondTheS</mark>...
+        </h2>
+        <p>
+            Converse com outros fãs
+            <br>
+            Capture seus momentos 
+            <br>
+            favoritos 
+            <br>
+            Siga para receber
+            <br>
+            notificações quando o canal
+            <br>
+            entrar ao vivo
+        </p>
+        <div class="navbar">
+            <a href="#" class="button" id="cadastrar" style="float: left; margin: 0;">Cadastrar-se</a>
+        </div>
     </div>
 
     <div class="right-side">
+        <h3>Canais ao vivo que achamos que vai gostar</h3>
+        <div class="sep">
+            <div class="gallery-top">
+                <a target="_blank" href="src/live_user_casimito-440x248.jpg">
+                    <img src="src/live_user_casimito-440x248.jpg">
+                </a>
+                <div class="desc">A PROCURA DA FELICIDADE! 🍀 SO...</div>
+            </div>
+            <div class="gallery-top">
+                <a target="_blank" href="src/live_user_nl_kripp-320x180.jpg">
+                    <img src="src/live_user_nl_kripp-320x180.jpg">
+                </a>
+                <div class="desc">BGs /w NERFED BACON | NEW PATCH | ...</div>
+            </div>
+            <div class="gallery-top">
+                <a target="_blank" href="src/live_user_gaules-320x180.jpg">
+                    <img src="src/live_user_gaules-320x180.jpg">
+                </a>
+                <div class="desc">Santos vs Paqueta CBCS Elite League S...</div>
+            </div>
+        </div>
+        
+        <h3><mark class="purple">Categorias</mark> que achamos que vai gostar</h3>
 
+        <div class="sep">
+            <div class="gallery-bottom">
+                <a target="_blank" href="src/Just Chatting-285x380.jpg">
+                    <img src="src/Just Chatting-285x380.jpg">
+                </a>
+                <div class="desc">Só na conversa</div>
+            </div>
+            <div class="gallery-bottom">
+                <a target="_blank" href="src/Apex Legends-285x380.jpg">
+                    <img src="src/Apex Legends-285x380.jpg">
+                </a>
+                <div class="desc">Apex Legends</div>
+            </div>
+            <div class="gallery-bottom">
+                <a target="_blank" href="src/Call of Duty_ Warzone-285x380.jpg">
+                    <img src="src/Call of Duty_ Warzone-285x380.jpg">
+                </a>
+                <div class="desc">Call of Duty Warzone</div>
+            </div>
+            <div class="gallery-bottom">
+                <a target="_blank" href="src/Grand Theft Auto V-285x380.jpg">
+                    <img src="src/Grand Theft Auto V-285x380.jpg">
+                </a>
+                <div class="desc">Grand Theft Auto V</div>
+            </div>
+            <div class="gallery-bottom">
+                <a target="_blank" href="src/League of Legends-285x380.jpg">
+                    <img src="src/League of Legends-285x380.jpg">
+                </a>
+                <div class="desc">League of Legends</div>
+            </div>
+            <div class="gallery-bottom">
+                <a target="_blank" href="src/VALORANT-285x380.jpg">
+                    <img src="src/VALORANT-285x380.jpg">
+                </a>
+                <div class="desc">VALORANT</div>
+            </div>
+    </div>
     </div>
 
     <div class="footer">
